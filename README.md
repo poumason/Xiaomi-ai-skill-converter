@@ -1,8 +1,8 @@
-# Xiaoai-Dotnet
+# Xiaomi-ai-skill-converter 
 
 ### System requirement
-* .NET standard 2.0
-* ASP.NET Core 2.0
+* [.NET standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard)
+* [ASP.NET Core 2.0](https://docs.microsoft.com/en-us/aspnet/core/aspnetcore-2.0)
 
 ### XaiomiAI.SDK
 * RequestContent
