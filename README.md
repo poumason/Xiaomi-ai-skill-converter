@@ -1,5 +1,10 @@
 # Xiaomi-ai-skill-converter 
 
+### Documents
+[自定义技能开发文档](https://shuidi.mi.com/documents/Home?type=/doc/render_markdown/CustomSkills)
+
+If you aren't a Xiaomi AI developer, please visit the [水滴平台](https://shuidi.mi.com/).
+
 ### System requirement
 * [.NET standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard)
 * [ASP.NET Core 2.0](https://docs.microsoft.com/en-us/aspnet/core/aspnetcore-2.0)
