@@ -111,3 +111,13 @@ public async Task<ResponseContent> Post([FromBody]string value)
     }
 }
 ```
+
+### Enter develop mode of the Xiaomi AI Speaker
+If the state of the custom skill is testing or during cerficiation process, you can test it on the Xiaomi AI Speaker.
+
+Steps:
+1. 对音箱说：`进入开发者模式`
+
+   --------------测试中-------------------
+2. 用你的技能 `调用名称` 进行测试，只有处于测试中或者审核中的技能都能够进行测试
+3. 想要退出请说：`进入用户模式`

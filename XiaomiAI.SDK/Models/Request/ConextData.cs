@@ -8,6 +8,6 @@ namespace XiaomiAI.SDK.Models
         /// 表示当前用户的一些账号认证信息，例如OAuth开发者的返回
         /// </summary>
         [JsonProperty("passport")]
-        public string Passport { get; set; }
+        public object Passport { get; set; }
     }
 }
