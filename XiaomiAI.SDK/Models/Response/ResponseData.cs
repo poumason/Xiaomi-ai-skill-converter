@@ -37,5 +37,11 @@ namespace XiaomiAI.SDK.Models
         /// </summary>
         [JsonProperty("prompt")]
         public PromptData Prompt { get; set; }
+
+        /// <summary>
+        /// 表示开发者是否理解语义，平台会计数决定是否退出技能(最多两次)，详见技能最佳实践
+        /// </summary>
+        [JsonProperty("not_understand")]
+        public bool NotUnderstand { get; set; }
     }
 }

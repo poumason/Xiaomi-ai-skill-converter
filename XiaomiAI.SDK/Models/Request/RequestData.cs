@@ -42,5 +42,17 @@ namespace XiaomiAI.SDK.Models
         /// </summary>
         [JsonProperty("no_response")]
         public bool NoResponse { get; set; }
+
+        /// <summary>
+        /// 请求事件的类型
+        /// </summary>
+        [JsonProperty("event")]
+        public string Event { get; set; }
+
+        /// <summary>
+        /// 请求事件的属性, 可能的属性字段, msg_file_id: 留言文件产生的id
+        /// </summary>
+        [JsonProperty("event_property")]
+        public object EventProperty { get; set; }
     }
 }

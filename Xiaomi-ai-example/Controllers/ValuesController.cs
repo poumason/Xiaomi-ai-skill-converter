@@ -44,11 +44,16 @@ namespace Xiaomi_ai_example.Controllers
                     {
                         case RequestType.Intent:
                             string displayText = "是的，幫你朗讀現在氣象";
+
+                            string sessionAttributes = @"{ ""name"": ""pou"", ""email"": ""poumason@live.com""}";
+
                             return new ResponseContent
                             {
                                 IsSessionEnd = false,
+                                SessionAttributes = sessionAttributes,
                                 Response = new ResponseData
                                 {
+                                    // ToSpeak 與 ToDisplay 一定要給，來支援有屏幕跟沒有屏幕的設備
                                     ToSpeak = new ToSpeakData
                                     {
                                         Type = ToSpeakType.TTS,
