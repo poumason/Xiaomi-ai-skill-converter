@@ -1,7 +1,7 @@
 ﻿namespace XiaomiAI.SDK.Models
 {
     /// <summary>
-    /// 表示要使用的 template 的类型
+    /// 表示要使用的 Template 的类型
     /// </summary>
     public enum UITemplateType
     {

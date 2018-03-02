@@ -8,13 +8,13 @@ namespace XiaomiAI.SDK.Models
     public class HtmlToDisplayData : IToDisplayData
     {
         /// <summary>
-        /// 显示的类型： 1 html
+        /// 显示的类型： 1 HTML
         /// </summary>
         [JsonProperty("type")]
         public ToDisplayType Type => ToDisplayType.UrlOrHtml;
 
         /// <summary>
-        /// 给有显示屏的设备提供html页面显示能力
+        /// 给有显示屏的设备提供 HTML 页面显示能力
         /// </summary>
         [JsonProperty("url")]
         public string Url { get; set; }

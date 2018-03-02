@@ -14,7 +14,8 @@ namespace XiaomiAI.SDK.Models
         public string version => "1.0";
 
         /// <summary>
-        /// APP希望持久化的信息，下次同session的请求提供
+        /// <para>APP希望持久化的信息，下次同session的请求提供</para>
+        /// <para>JSObject</para>
         /// </summary>
         [JsonProperty("session_attributes")]
         public object SessionAttributes { get; set; } = null;

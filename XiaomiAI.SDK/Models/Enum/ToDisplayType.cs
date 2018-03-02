@@ -14,11 +14,11 @@
         /// </summary>
         UrlOrHtml = 1,
         /// <summary>
-        /// native ui
+        /// Native UI
         /// </summary>
         NativeUI = 2,
         /// <summary>
-        /// widgets
+        /// Widgets
         /// </summary>
         Widgets = 3,
     }

@@ -9,13 +9,15 @@ namespace XiaomiAI.SDK.Models
     public class PromptData
     {
         /// <summary>
-        /// 提示信息 (string required)
+        /// <para>提示信息</para>
+        /// <para>(string required)</para>
         /// </summary>
         [JsonProperty("text")]
         public string Text { get; set; }
 
         /// <summary>
-        /// 表示 prompt 下面的标签 (array optional)
+        /// <para>表示 prompt 下面的标签</para>
+        /// <para>(array optional)</para>
         /// </summary>
         [JsonProperty("hints")]
         public List<HintData> Hints { get; set; }
