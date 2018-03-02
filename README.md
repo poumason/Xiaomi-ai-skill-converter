@@ -7,6 +7,7 @@ If you aren't a Xiaomi AI developer, please visit the [水滴平台](https://shu
 
 ### System requirement
 * [.NET standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard)
+* [.NET Framework 4.5.2+](https://docs.microsoft.com/en-us/dotnet/framework/install/guide-for-developers)
 * [ASP.NET Core 2.0](https://docs.microsoft.com/en-us/aspnet/core/aspnetcore-2.0)
 
 ### XaiomiAI.SDK
@@ -33,7 +34,7 @@ public async Task<ResponseContent> Post([FromBody]string value)
         switch (requestContent.Request.Type)
         {
             case RequestType.Intent:
-                string displayText = "是的，幫你朗讀現在氣象";
+                string displayText = "是的，帮你朗读现在气象";
                 return new ResponseContent
                 {
                     IsSessionEnd = false,
