@@ -10,12 +10,6 @@ namespace XiaomiAI.SDK.Models
         [JsonProperty("type")]
         public string Type => "tts";
 
-        /// <summary>
-        /// 播放行为的定义
-        /// </summary>
-        [JsonProperty("play_behavior")]
-        public PlayBehaviorType PlayBehavior { get; set; } = default(PlayBehaviorType);
-
         [JsonProperty("tts_item")]
         public TTSItemData TTSItem { get; set; } = null;
     }    

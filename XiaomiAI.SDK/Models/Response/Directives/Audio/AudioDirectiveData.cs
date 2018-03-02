@@ -11,12 +11,6 @@ namespace XiaomiAI.SDK.Models
         public string Type => "audio";
 
         /// <summary>
-        /// 播放行为的定义
-        /// </summary>
-        [JsonProperty("play_behavior")]
-        public PlayBehaviorType PlayBehavior { get; set; } = default(PlayBehaviorType);
-
-        /// <summary>
         /// 播放媒體資源
         /// </summary>
         [JsonProperty("audio_item")]

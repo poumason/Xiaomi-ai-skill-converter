@@ -8,7 +8,7 @@ namespace XiaomiAI.SDK.Models
     public class NativeUIToDisplayData : IToDisplayData
     {
         /// <summary>
-        /// 显示的类型： 2 navie ui
+        /// 显示的类型： 2 Native UI
         /// </summary>
         [JsonProperty("type")]
         public ToDisplayType Type => ToDisplayType.NativeUI;

@@ -3,7 +3,5 @@
     public interface IDirectiveData
     {
         string Type { get; }
-
-        PlayBehaviorType PlayBehavior { get; set; }
     }
 }

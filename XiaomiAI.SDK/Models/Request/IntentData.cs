@@ -34,6 +34,9 @@ namespace XiaomiAI.SDK.Models
         [JsonProperty("need_fetch_token")]
         public bool NeedFetchToken { get; set; }
 
+        /// <summary>
+        /// <para>是否为直接唤醒技能，例如让菜谱查一下鱼香肉丝怎么做　这时候会设置为 true</para>
+        /// </summary>
         [JsonProperty("is_direct_wakeup")]
         public bool IsDirectWakeup { get; set; }
     }

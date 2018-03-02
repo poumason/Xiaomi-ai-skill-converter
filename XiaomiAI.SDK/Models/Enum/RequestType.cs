@@ -5,7 +5,6 @@
     /// </summary>
     public enum RequestType
     {
-        None = -1,
         /// <summary>
         /// 唤醒词请求
         /// </summary>

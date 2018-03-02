@@ -14,7 +14,7 @@
         /// </summary>
         Audio = 1,
         /// <summary>
-        /// ssml,目前只支持TTS
+        /// SSML,目前只支持 TTS
         /// </summary>
         SSML = 2,
     }
