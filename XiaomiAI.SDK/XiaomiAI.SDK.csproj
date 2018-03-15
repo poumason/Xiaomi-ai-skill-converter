@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net452;net461</TargetFrameworks>
+    <PackageProjectUrl>https://github.com/poumason/Xiaomi-ai-skill-converter</PackageProjectUrl>
+    <PackageTags>Xiaomi,AI,小米,小米大腦,水滴平臺,Shuidi</PackageTags>
+    <PackageReleaseNotes>1.0.0.0: support standard Xiaomi AI request/response.</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/poumason/Xiaomi-ai-skill-converter</RepositoryUrl>
+    <Copyright>Pou Lin</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
