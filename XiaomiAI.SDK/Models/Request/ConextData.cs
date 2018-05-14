@@ -5,15 +5,21 @@ namespace XiaomiAI.SDK.Models
     public class ConextData
     {
         /// <summary>
-        /// 表示当前用户的一些账号认证信息，例如 OAuth 开发者的返回
+        /// 设备唯一标识，需要申请才会给到
+        /// </summary>
+        [JsonProperty("device_id")]
+        public string DeviceId { get; set; }
+
+        /// <summary>
+        /// OAuth账号绑定的额外信息
         /// </summary>
         [JsonProperty("passport")]
         public object Passport { get; set; }
 
         /// <summary>
-        /// 表示设备的唯一标识
+        /// 客户端APP相关信息
         /// </summary>
-        [JsonProperty("device_id")]
-        public string DeviceId { get; set; }
+        [JsonProperty("app_info")]
+        public AppInfoData AppInfo { get; set; }
     }
 }

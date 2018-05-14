@@ -26,6 +26,25 @@ namespace XiaomiAI.SDK.Models
         public long Timestamp { get; set; }
 
         /// <summary>
+        /// <para>是否用户没响应小爱（例如用户没有在小爱音箱旁边），开发者看到这个标志应该回复一些提醒话术提醒用户</para>
+        /// </summary>
+        [JsonProperty("no_response")]
+        public bool NoResponse { get; set; }
+
+        /// <summary>
+        /// <para>事件类型</para>
+        /// </summary>
+        /// <see cref="https://xiaoai.mi.com/documents/Home?type=/api/doc/render_markdown/SkillAccess/SkillDocument/EventsAndTheme#事件"/>
+        [JsonProperty("event")]
+        public string Event { get; set; }
+
+        /// <summary>
+        /// 事件的相关信息
+        /// </summary>
+        [JsonProperty("event_property")]
+        public EventPropertyData EventProperty { get; set; }
+
+        /// <summary>
         /// 请求的地区，默认是 zh-CN
         /// </summary>
         [JsonProperty("locale")]
@@ -38,21 +57,9 @@ namespace XiaomiAI.SDK.Models
         public IntentData Intent { get; set; }
 
         /// <summary>
-        /// 用户没有响应（一般用于无屏设备，例如小米AI音箱），开发者看到这个标志应该回复一些提醒话术提醒用户
+        /// 意图信息
         /// </summary>
-        [JsonProperty("no_response")]
-        public bool NoResponse { get; set; }
-
-        /// <summary>
-        /// 请求事件的类型
-        /// </summary>
-        [JsonProperty("event")]
-        public string Event { get; set; }
-
-        /// <summary>
-        /// 请求事件的属性, 可能的属性字段, msg_file_id: 留言文件产生的id
-        /// </summary>
-        [JsonProperty("event_property")]
-        public object EventProperty { get; set; }
+        [JsonProperty("slot_info")]
+        public SlotInfoData SlotInfo { get; set; }
     }
 }

@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System.Collections.Generic;
 
 namespace XiaomiAI.SDK.Models
 {
@@ -18,7 +17,7 @@ namespace XiaomiAI.SDK.Models
         public string SessionId { get; set; }
 
         /// <summary>
-        /// 服务的 app
+        /// 当前轮命中的技能
         /// </summary>
         [JsonProperty("application")]
         public ApplicationData Application { get; set; }

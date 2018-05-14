@@ -21,13 +21,13 @@ namespace XiaomiAI.SDK.Models
         public object SessionAttributes { get; set; } = null;
 
         /// <summary>
-        /// 标识session是否结束
+        /// 是否结束当前会话
         /// </summary>
         [JsonProperty("is_session_end")]
         public bool IsSessionEnd { get; set; } = false;
 
         /// <summary>
-        /// 回傳本文
+        /// 返回的具体信息
         /// </summary>
         [JsonProperty("response")]
         public ResponseData Response { get; set; }
