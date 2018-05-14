@@ -20,7 +20,7 @@ namespace XiaomiAI.SDK.Models
         public string Text { get; set; }
 
         /// <summary>
-        /// 使用小米内置 UI
+        /// 显示的模板，有屏设备支持一些显示模板，可以通过这个配置 
         /// </summary>
         [JsonProperty("ui_template")]
         public UITemplateData UiTemplate { get; set; }

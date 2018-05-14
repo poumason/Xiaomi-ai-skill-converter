@@ -4,33 +4,33 @@ using System.Collections.Generic;
 namespace XiaomiAI.SDK.Models
 {
     /// <summary>
-    /// 回傳本文
+    /// <para>回傳本文</para>
     /// </summary>
     public class ResponseData
     {
         /// <summary>
-        /// 指示客户端是否需要关闭mic, true，打开麦克风；false，关闭麦克风
+        /// 是否需要开麦（相关指导建议详见最佳实践），默认不开麦 
         /// </summary>
         [JsonProperty("open_mic")]
         public bool? OpenMic { get; set; } = null;
 
         /// <summary>
-        /// <para>需要說的文字</para>
+        /// <para>tts要说的话，通常简单的回复可以使用这个字段</para>
         /// <para>(jsobject required)</para>
-        /// <para>和directive 二选一，复杂的用directive，简单的用tospeak</para>
+        /// <para>和 directives 二选一，复杂的用 directives，简单的用 tospeak</para>
         /// </summary>
         [JsonProperty("to_speak")]
         public ToSpeakData ToSpeak { get; set; }
 
         /// <summary>
-        /// <para>显示的内容</para>
+        /// <para>有屏设备显示的数据</para>
         /// <para>(jsobject optional)</para>
         /// </summary>
         [JsonProperty("to_display")]
         public IToDisplayData ToDisplay { get; set; }
 
         /// <summary>
-        /// <para>回复用户时设备需要做的任務集合。</para>
+        /// <para>设备的复杂操作通常放在这里，例如多句tts，url音频播放等</para>
         /// <para>例如播放音频, 和tospeak 二选一，复杂的用directive，简单的用tospeak</para>
         /// </summary>
         [JsonProperty("directives")]
@@ -47,5 +47,24 @@ namespace XiaomiAI.SDK.Models
         /// </summary>
         [JsonProperty("not_understand")]
         public bool NotUnderstand { get; set; }
+
+        /// <summary>
+        /// 动作
+        /// </summary>
+        /// <see cref="https://xiaoai.mi.com/documents/Home?type=/api/doc/render_markdown/SkillAccess/SkillDocument/EventsAndTheme#动作"/>
+        [JsonProperty("action")]
+        public string Action { get; set; }
+
+        /// <summary>
+        /// ActionPropertyData
+        /// </summary>
+        [JsonProperty("action_property")]
+        public ActionPropertyData ActionProperty { get; set; }
+
+        /// <summary>
+        /// 需要注册的事件类型
+        /// </summary>
+        [JsonProperty("register_events")]
+        public List<RegisterEventData> RegisterEvents { get; set; }
     }
 }

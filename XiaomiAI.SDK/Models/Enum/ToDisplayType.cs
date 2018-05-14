@@ -18,7 +18,7 @@
         /// </summary>
         NativeUI = 2,
         /// <summary>
-        /// Widgets
+        /// Widgets, 目前主要用在电视和手机等有屏设备 
         /// </summary>
         Widgets = 3,
     }
