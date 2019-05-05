@@ -13,7 +13,7 @@ namespace XiaomiAI.SDK.Models
         /// <summary>
         /// 版本号
         /// </summary>
-        [JsonProperty("version_code")]
+        [JsonProperty("version_name")]
         public int VersionCode { get; set; }
     }
 }

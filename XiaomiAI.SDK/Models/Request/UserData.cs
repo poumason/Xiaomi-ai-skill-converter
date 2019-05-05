@@ -15,5 +15,17 @@ namespace XiaomiAI.SDK.Models
         /// </summary>
         [JsonProperty("access_token")]
         public string AccessToken { get; set; }
+
+        /// <summary>
+        /// <para>使用是否在设备上登录了小米账号</para>
+        /// </summary>
+        [JsonProperty("is_user_login")]
+        public bool IsUserLogin { get; set; }
+
+        /// <summary>
+        /// <para>声纹识别出来的性别, 目前支持三种类型: male, female, child</para>
+        /// </summary>
+        [JsonProperty("gender")]
+        public string Gender { get; set; }
     }
 }

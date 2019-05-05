@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace XiaomiAI.SDK.Models
 {
@@ -17,9 +18,9 @@ namespace XiaomiAI.SDK.Models
         public object Passport { get; set; }
 
         /// <summary>
-        /// 客户端APP相关信息
+        /// 客户端APP相关信息, list[ClientAppInfo]
         /// </summary>
         [JsonProperty("app_info")]
-        public AppInfoData AppInfo { get; set; }
+        public List<AppInfoData> AppInfo { get; set; }
     }
 }
