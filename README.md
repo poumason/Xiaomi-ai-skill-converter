@@ -1,4 +1,6 @@
 # Xiaomi-ai-skill-converter 
+### Download
+[![NuGet](https://img.shields.io/badge/nuget-1.0.0.1-green.svg)](https://www.nuget.org/packages/XiaomiAI.SDK/)
 
 ### Documents
 [自定义技能开发文档](https://shuidi.mi.com/documents/Home?type=/doc/render_markdown/CustomSkills)
