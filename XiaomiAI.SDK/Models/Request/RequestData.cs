@@ -34,8 +34,8 @@ namespace XiaomiAI.SDK.Models
         /// <summary>
         /// <para>事件类型</para>
         /// </summary>
-        /// <see cref="https://xiaoai.mi.com/documents/Home?type=/api/doc/render_markdown/SkillAccess/SkillDocument/EventsAndTheme#事件"/>
-        [JsonProperty("event")]
+        /// <see cref="https://xiaoai.mi.com/documents/Home?type=/api/doc/render_markdown/SkillAccess/SkillDocument/CustomSkills/EventsAndTheme"/>
+        [JsonProperty("event_type")]
         public string Event { get; set; }
 
         /// <summary>

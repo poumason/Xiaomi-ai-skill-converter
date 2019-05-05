@@ -49,7 +49,7 @@ namespace XiaomiAI.SDK.Models
         public bool NotUnderstand { get; set; }
 
         /// <summary>
-        /// 动作
+        /// 动作类型, 常见的动作有：leave_msg, play_msg等
         /// </summary>
         /// <see cref="https://xiaoai.mi.com/documents/Home?type=/api/doc/render_markdown/SkillAccess/SkillDocument/EventsAndTheme#动作"/>
         [JsonProperty("action")]
