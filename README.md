@@ -3,7 +3,7 @@
 [![NuGet](https://img.shields.io/badge/nuget-1.0.0.1-green.svg)](https://www.nuget.org/packages/XiaomiAI.SDK/)
 
 ### Documents
-[自定义技能开发文档](https://shuidi.mi.com/documents/Home?type=/doc/render_markdown/CustomSkills)
+[如何接入技能开放平台](https://xiaoai.mi.com/documents/Home?type=/api/doc/render_markdown/SkillAccess/SKDes/Beginner)
 
 If you aren't a Xiaomi AI developer, please visit the [水滴平台](https://shuidi.mi.com/).
 
